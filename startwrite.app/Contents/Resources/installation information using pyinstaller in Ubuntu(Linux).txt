@@ -1,0 +1,102 @@
+Step 1 :
+
+Install pyinstaller throught terminal :
+
+$pip install pyinstaller
+
+Step 2:
+
+Check the python3 version in installed or not throught terminal:
+
+Input:
+
+$which python3
+
+Output:
+
+/usr/bin/python3
+or
+/usr/bin/env python3
+
+Step 3:
+
+Copy this output of (step 2) and paste on very top of coding in each evey python files using this way:
+
+#! /usr/bin/env python3
+
+Step 4:
+
+change mode of authorise for all user:
+
+$chmod +x <main_filename>.py
+
+Step 5:
+
+after change mode of .py file run this syntax throught terminal:
+
+$pyinstaller (-F)(<-- Optional) (--clean)(<-- Optional) <main_filename>.py
+
+after run this (step 5) syntax output will be two folders with name build and dist and one file
+name <main_filename>.spec will be Create.
+
+(Optional) $sudo apt-get install python3-setuptools (if need)
+(Optional) $sudo pip install --upgrade setuptools (if need)
+
+Step 6:
+
+if there is a package files along with main file of .py file then bundles all adding files package 
+manually in <main_filename>.spec (in Linux Os):
+
+a = Analysis(['main_filename.py'],
+             pathex=['/home/pc_name/source_folder_name'],
+             binaries=[],
+             datas=[('/home/pc_name/source_folder_name/sub_folder', 'new_folder_name' ),
+		('/home/pc_name/source_folder_name/sub_folder', 'new_folder_name' ),
+		('/home/pc_name/source_folder_name/image.jpg', '.' ),
+		('/home/pc_name/source_folder_name/sub_pyfile.py', '.' ),
+		('.../.../...', '.'),
+		],
+             hiddenimports=[],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=[],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=block_cipher,
+             noarchive=False)
+exe = EXE(pyz,
+          a.scripts,
+          [],
+          exclude_binaries=True,
+          name='<Application_name>',
+          debug=False,
+          bootloader_ignore_signals=False,
+          strip=False,
+          upx=True,
+	  icon='/home/pc_name/source_folder_name/<file_icon>.xbm',   (#--> for linux os  or MAC OS then icon 										extension will be .xbm and for 										window it will be .ico format.)
+	  version='/<version_information>.txt',
+          console=True )
+coll = COLLECT(exe,
+               a.binaries,
+               a.zipfiles,
+               a.datas,
+               strip=False,
+               upx=True,
+               name='<application_name>')
+
+Step 7:
+after comptele the (Step 6) run this syntax throught terminal:
+
+$pyinstaller <main_filename>.spec
+
+Step 8:
+
+after completing all the steps run the application from dist folder 
+
+
+
+2nd process:
+Install auto-py-to-exe using the following command.
+pip install auto-py-to-exe
+Its a totally gui process. Its easy to use.
+

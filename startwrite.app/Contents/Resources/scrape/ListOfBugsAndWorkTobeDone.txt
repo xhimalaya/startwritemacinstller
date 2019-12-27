@@ -1,0 +1,27 @@
+List of Features to add :
+	Name of Job			Status
+1. Text flow feature  			Not done yet
+
+2. Font size increase 			Not yet done.
+
+3. Letter outliner			Working on 
+
+4. Multipage 				Not yet Done
+
+5. Cut and paste 			function done . Yet to attach 
+
+List of Bugs :
+
+1. BackSpace form speacified position . 
+
+2. Cursor on add letter on speacified pos .
+
+3. Border art 
+
+4. Letter outliner .
+
+5. Color letter on some speacific condition . While removing color , it removes entire letter .
+
+6. Stoke arrow with bezier .
+
+ 

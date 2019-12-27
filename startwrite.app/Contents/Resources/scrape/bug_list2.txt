@@ -1,0 +1,9 @@
+list_of_bug:
+1.Connect dot continous probelm
+2.Start dot continous pro
+3.composite_dot() stoke_arrow_flag_pos compositedot_already_applied_array
+4.decision dot continous decision_dot() decision_dot_flag_pos decisiondot_already_applied_array 
+5.SW_global.decisiondot_on_off
+
+
+To solve those bugs we have to first delete_ _dot related array and then appy the features 

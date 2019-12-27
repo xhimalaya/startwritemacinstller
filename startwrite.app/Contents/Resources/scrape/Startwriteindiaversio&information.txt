@@ -1,0 +1,13 @@
+<@rigestered>
+Application Name = "StartWriteIndia"
+Client = "David Richard Sharp"
+Organisation = "StartWrite"
+Version  = 0.0.1(Trail Version)
+Description = "This is a Desktop Application for Handwritting Worksheet wizard skill for kids"
+
+this program licensed by:
+<@Copyright>
+Develop by = Dipankar Chowdhury and Kuntal Samanta(Python Developer Team)
+Company = Eclipse Technoconsulting Global Pvt. Ltd.
+Offical Website = "https://www.startwriteindia.com/"
+
